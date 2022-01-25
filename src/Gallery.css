@@ -1,0 +1,7 @@
+#imgs li{ margin-bottom: 30px; }
+h3.galtext{ font-size: 3rem}
+#imgs li{ margin-left: -2%}
+
+@media (min-width: 768px){
+    #imgs li{ margin-left: 0}
+}

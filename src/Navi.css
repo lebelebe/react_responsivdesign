@@ -1,0 +1,30 @@
+#navToggler:before,
+#navToggler:after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.5s;
+}
+#navToggler{ outline: none; padding: 0; max-width: 50px; min-width: 30px;}
+#navToggler .navbar-toggler-icon{display: none;}
+/* 우선순위최상위로 올리기 */
+#navToggler.navbar-toggler:focus{
+    box-shadow: none;
+}
+#navToggler[data-state='true']:after{
+    transform: rotate(-45deg) translateY(-3px);
+
+}
+#navToggler[data-state='true']:before{
+    transform: rotate(45deg) translateY(3px);
+}
+
+#gnb[data-open='true']{
+    display: flex !important;
+}
+
+a.nav-link, a.nav-link:active, a.nav-link:visited{ color:#222;}
+a.nav-link:hover { background-color: #8ed521; color: white; transition:0.3s}
+.nav-link{font-size: 20px;}
