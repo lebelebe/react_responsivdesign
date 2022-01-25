@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <Navi></Navi>
       <Carousel></Carousel>
-      <Gallery propid='review' proptitle='이벤트' propfolder='event'></Gallery>
-      <Gallery propid='gallery' proptitle='상품' propfolder='product'></Gallery>
+      <Gallery propid='review' proptitle='이벤트' propfolder='event' linknum='0'></Gallery>
+      <Gallery propid='gallery' proptitle='상품' propfolder='product' linknum='1'></Gallery>
     </div>
   );
 }
